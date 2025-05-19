@@ -1,0 +1,18 @@
+[project]
+name = "client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.1.0",
+    "langchain-mcp-adapters>=0.1.0",
+    "langchain-openai>=0.3.17",
+    "langgraph-prebuilt>=0.1.8",
+    "mcp>=1.9.0",
+    "mcp-client>=0.2.0",
+    "python-dotenv>=1.0.0",
+    "pydantic-settings>=2.0.0",
+    "langgraph>=0.4.5",
+    "prettyprint>=0.1.5",
+]

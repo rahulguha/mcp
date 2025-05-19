@@ -1,0 +1,27 @@
+{
+  "servers": {
+    "docker-school-list": {
+      "command": "docker",
+      "args": [
+        "exec",
+        "-i",
+        "mcp_stdio_school_list",
+        "python",
+        "-m",
+        "mcp.server"
+      ],
+      "transport": "stdio",
+      "env": {
+        "DEBUG": "true"
+      }
+    },
+    "local-school-list": {
+      "command": "uv",
+      "args": ["run", "school_list_stdio.py"],
+      "transport": "stdio",
+      "env": {
+        "DEBUG": "true"
+      }
+    }
+  }
+}
