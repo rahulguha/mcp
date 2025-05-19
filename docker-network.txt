@@ -1,0 +1,20 @@
+docker network create school-network
+docker run --rm -d \
+  --name school-list-api \
+  -p 3100:3100 \
+  --network school-network \
+  school-list-api
+  
+docker run --rm -d \
+  --name school-rag-api \
+  -p 3200:3200 \
+  --network school-network \
+  school-rag-api
+  
+docker run --rm -d \
+  --name school-mcp-server \
+  -p 3501:3501 \
+  --network school-network \
+  -e SCHOOL_LIST_API_ENDPOINT=http://school-list-api:3100/schools \
+  -e SCHOOL_RAG_API_ENDPOINT=http://school-rag-api:3200/chat \
+  school-mcp-server
