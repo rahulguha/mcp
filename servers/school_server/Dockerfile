@@ -26,7 +26,7 @@ COPY . .
 # COPY ../servers/school_server/.env ./.env
 
 # Expose ports 3200 (FastAPI) and 3501 (MCP SSE)
-EXPOSE 3501
+EXPOSE 8080
 
 # Run the MCP SSE server
 CMD ["uv", "run", "python", "school_list.py"]

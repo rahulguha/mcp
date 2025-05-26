@@ -1,0 +1,117 @@
+[
+  {
+    "school": "ERAU",
+    "urls": [
+      {
+        "url": "https://news.erau.edu/headlines/embry-riddle-earns-top-five-national-ranking-for-aerospace-engineering-plus-best-in-west",
+        "tags": ["ranking", "overview"]
+      },
+      {
+        "url": "https://daytonabeach.erau.edu/",
+        "tags": ["homepage", "overview"]
+      },
+      {
+        "url": "https://erau.edu/degrees/bachelor/aerospace-engineering",
+        "tags": ["Aerospace Engineering", "overview"]
+      },
+      {
+        "url": "https://erau.edu/degrees/bachelor/mechanical-engineering",
+        "tags": ["Mechanical Engineering", "overview"]
+      },
+      {
+        "url": "https://daytonabeach.erau.edu/admissions/faq",
+        "tags": ["admission"]
+      },
+      {
+        "url": "https://daytonabeach.erau.edu/admissions/apply",
+        "tags": ["application", "timeline"]
+      },
+      {
+        "url": "https://daytonabeach.erau.edu/admissions/undergraduate/first-time",
+        "tags": ["admission"]
+      },
+      {
+        "url": "https://daytonabeach.erau.edu/admissions/estimated-costs",
+        "tags": ["cost"]
+      }
+    ]
+  },
+  {
+    "school": "TAMU",
+    "urls": [
+      {
+        "url": "https://www.tamu.edu/",
+        "tags": ["homepage", "overview"]
+      },
+      {
+        "url": "https://www.tamu.edu/admissions/how-to-apply/apply-as-freshman.html",
+        "tags": ["application", "timeline"]
+      },
+      {
+        "url": "https://www.tamu.edu/academics/colleges-schools/college-of-engineering.html",
+        "tags": ["engineering", "overview"]
+      },
+      {
+        "url": "https://engineering.tamu.edu/aerospace/index.html",
+        "tags": ["aerospace", "overview"]
+      },
+      {
+        "url": "https://engineering.tamu.edu/aerospace/research/index.html",
+        "tags": ["aerospace", "research"]
+      },
+      {
+        "url": "https://engineering.tamu.edu/aerospace/research/centers-and-laboratories.html",
+        "tags": ["aerospace", "research"]
+      },
+      {
+        "url": "https://engineering.tamu.edu/aerospace/advising/scholarships-and-aid/undergraduate-funding/index.html",
+        "tags": ["aerospace", "scholarship"]
+      },
+      {
+        "url": "https://engineering.tamu.edu/academics/undergraduate/entry-to-a-major/essays.html",
+        "tags": ["application", "essay"]
+      },
+      {
+        "url": "https://tuition.tamu.edu/undergraduate",
+        "tags": ["application", "tuition"]
+      },
+      {
+        "url": "https://aggie.tamu.edu/financial-aid/types-of-aid/scholarships/undergraduate-scholarships",
+        "tags": ["application", "scholarship"]
+      }
+    ]
+  },
+  {
+    "school": "University of Colorado -BOULDER",
+    "urls": [
+      {
+        "url": "https://www.colorado.edu/academics/bs-aerospace-engineering",
+        "tags": ["aerospace", "overview"]
+      },
+      {
+        "url": "https://www.colorado.edu/about/rankings-achievements",
+        "tags": ["aerospace", "ranking"]
+      },
+      {
+        "url": "https://www.colorado.edu/admissions/process/first-year/faqs",
+        "tags": ["aerospace", "faq"]
+      },
+      {
+        "url": "https://www.colorado.edu/admissions/process/first-year/plan#accordion-ee24f556e0ae2a998700d9d4ebe966e89-1",
+        "tags": ["admission"]
+      },
+      {
+        "url": "https://www.colorado.edu/center/aerospacemechanics/",
+        "tags": ["aerospace", "mechanical", "research"]
+      },
+      {
+        "url": "https://www.colorado.edu/career/internships",
+        "tags": ["internship", "aerospace", "research"]
+      },
+      {
+        "url": "https://www.colorado.edu/resources/life-cu-boulder",
+        "tags": ["overview"]
+      }
+    ]
+  }
+]

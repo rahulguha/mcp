@@ -1,0 +1,36 @@
+# Use the official golang image to build your application
+FROM golang:1.21 AS builder
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy go.mod and go.sum to download dependencies
+COPY go.mod ./
+COPY go.sum ./
+RUN go mod download
+
+# Copy the rest of your application code
+COPY . .
+
+# Build the application
+# RUN CGO_ENABLED=0 GOOS=linux go build -o /main .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /main .
+
+# Use a minimal base image for the final stage
+FROM alpine:latest
+
+# Install ca-certificates for HTTPS calls if your app makes them
+RUN apk --no-cache add ca-certificates
+
+# Set working directory
+WORKDIR /app
+
+# Copy the compiled binary from the builder stage
+COPY --from=builder /main .
+COPY data/ /app/data/
+# Set the PORT environment variable as Cloud Run expects it.
+# Your Go app should read this. Default to 8080 if not set.
+ENV PORT 8080
+
+# Command to run the executable
+CMD ["/app/main"]

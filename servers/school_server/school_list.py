@@ -9,14 +9,17 @@ load_dotenv()
 # Initialize FastMCP server
 mcp = FastMCP(
     name="School List",
-    port=3501,
+    port=8080,
     on_duplicate_tools="error" # Set duplicate handling
     )
 
 # MCP tool to fetch school data
 @mcp.tool()
 async def get_schools() -> dict:
-    """This tool fetches school data from the schools API."""
+    """
+    This tool fetches list of schools information from the schools API.
+    Information includes 
+    """
     async with httpx.AsyncClient() as client:
         print("calling api")
         # school_list_api_endpoint = os.getenv("SCHOOL_LIST_API_ENDPOINT")

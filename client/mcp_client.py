@@ -19,14 +19,8 @@ async def main():
     url = os.getenv("SSE_SERVER_ENDPOINT")
     client = MultiServerMCPClient(
         {
-            # "school-list": {
-            #     "command": "uv",
-            #     "args":["run", "/Users/rahul/code/llm-projects/mcp/servers/school_server/stdio/school_list_stdio.py"],
-            #     "transport": "stdio",
-            # },
             "school-server-sse": {
                 "url":url, 
-                # "url": "http://localhost:3501/sse",
                 # "transport": "streamable_http",
                 "transport": "sse",
                 
@@ -37,7 +31,7 @@ async def main():
     pprint.pprint ( tools, indent=3)
     agent = create_react_agent(llm, tools)
     result = await agent.ainvoke(
-        {"messages": "Tell me about research opportunities for aersopace engineering"}
+        {"messages": "what schools are there in list ?"}
     )
 
     print(result["messages"][-1].content)

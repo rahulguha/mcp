@@ -14,6 +14,9 @@ class QueryRequest(BaseModel):
 
 
 # Assume qa_chain is already defined from the previous step
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 @app.post("/chat")
 async def chat(query_request: QueryRequest):
